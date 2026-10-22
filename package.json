@@ -1,0 +1,14 @@
+{
+  "name": "inkseal-scanner",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Browser extension that spots images carrying your hidden Inkseal Creator ID.",
+  "type": "module",
+  "scripts": {
+    "test": "node --test test/core.test.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,5 @@
+{
+  "extName": { "message": "Inkseal Scanner" },
+  "extDescription": { "message": "ค้นหารูปที่มีรหัสผู้สร้าง Inkseal แบบล่องหนของคุณระหว่างท่องเว็บ ทุกอย่างทำงานในเครื่องของคุณ" },
+  "menuCheck": { "message": "ตรวจด้วย Inkseal" }
+}

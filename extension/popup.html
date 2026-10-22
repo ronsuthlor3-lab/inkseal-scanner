@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Inkseal Scanner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="popup">
+<main>
+  <header>
+    <img src="icons/icon48.png" alt="">
+    <h1 data-i18n="appName">Inkseal Scanner</h1>
+    <div class="lang"><button data-lang="th">TH</button><button data-lang="en">EN</button></div>
+  </header>
+
+  <div class="card row spread">
+    <label class="check"><input type="checkbox" id="enabled"> <span data-i18n="popScanning"></span></label>
+    <span id="tab-count" class="muted small"></span>
+  </div>
+
+  <div id="ids-box" class="small"></div>
+
+  <div class="row spread">
+    <h2 data-i18n="popFound"></h2>
+    <button id="clear" class="small" data-i18n="popClear"></button>
+  </div>
+  <ul id="hits" class="hits card"></ul>
+
+  <p class="muted small" data-i18n="popHint"></p>
+  <div class="row spread">
+    <button id="settings" data-i18n="popSettings"></button>
+    <span class="muted small" data-i18n="privacy"></span>
+  </div>
+</main>
+<script type="module" src="popup.js"></script>
+</body>
+</html>

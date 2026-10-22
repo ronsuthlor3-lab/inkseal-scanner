@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Inkseal Scanner dev harness</title>
+  <link rel="stylesheet" href="../extension/style.css">
+  <style>
+    .imgs { display: flex; flex-wrap: wrap; gap: 12px; }
+    figure { margin: 0; font-size: 12px; }
+    figure img { display: block; width: 240px; height: auto; border: 1px solid var(--line); }
+    #log li.pass { color: var(--ok); }
+    #log li.fail { color: var(--bad); font-weight: 600; }
+  </style>
+</head>
+<body class="page">
+<main>
+  <h1>Inkseal Scanner — dev harness</h1>
+  <p class="muted small">
+    Runs the extension's scanning code in an ordinary page: the core checks, <code>analyzeBlob</code>
+    (the service worker's code path), the result report, and <code>content.js</code> with a stubbed
+    <code>chrome.*</code> API. It does not load the real extension. Serve the repo root over HTTP and open
+    <code>/dev/harness.html</code>.
+  </p>
+  <h2>Checks</h2>
+  <ul id="log"></ul>
+  <p id="summary"></p>
+  <h2>Report for the sealed PNG (as shown after "Check with Inkseal")</h2>
+  <div id="report" class="card"></div>
+  <h2>Images scanned by content.js</h2>
+  <div id="imgs" class="imgs"></div>
+</main>
+<script type="module" src="harness.js"></script>
+</body>
+</html>

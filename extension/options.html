@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inkseal Scanner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="page">
+<main>
+  <header>
+    <img src="icons/icon48.png" alt="">
+    <h1 data-i18n="optTitle">Inkseal Scanner</h1>
+    <div class="lang"><button data-lang="th">TH</button><button data-lang="en">EN</button></div>
+  </header>
+  <p class="muted" data-i18n="privacy"></p>
+
+  <section class="card">
+    <h2 data-i18n="optIds"></h2>
+    <p class="muted small" data-i18n="optIdsHelp"></p>
+    <form id="add-form" class="row">
+      <input type="text" id="id-input" placeholder="XXXX-XXXX-XXXX" autocomplete="off" spellcheck="false" aria-label="Creator ID">
+      <button type="submit" class="primary" data-i18n="optAdd"></button>
+    </form>
+    <p id="id-error" class="error" role="alert"></p>
+    <ul id="ids" class="ids"></ul>
+  </section>
+
+  <section class="card">
+    <label class="check"><input type="checkbox" id="enabled"> <span><span data-i18n="optScanning"></span><br><span class="muted small" data-i18n="optScanningHelp"></span></span></label>
+  </section>
+
+  <section class="card">
+    <h2 data-i18n="optHowTitle"></h2>
+    <ul class="plain small">
+      <li data-i18n="optHow1"></li>
+      <li data-i18n="optHow2"></li>
+      <li data-i18n="optHow3"></li>
+    </ul>
+    <h2 data-i18n="optLimitsTitle"></h2>
+    <ul class="plain small">
+      <li data-i18n="optLimits1"></li>
+      <li data-i18n="optLimits2"></li>
+      <li data-i18n="optLimits3"></li>
+      <li data-i18n="optLimits4"></li>
+    </ul>
+  </section>
+</main>
+<script type="module" src="options.js"></script>
+</body>
+</html>
